@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+          $(function(){
+
+let h1 = document.createElement("h1");
+h1.innerHTML= "First H1";
+h1.setAttribute = "Firsst H1"
+$("#myH1").append(h1);
+
+})
+
+document.getElementById("id").replaceWith(p);
+
+//    create element - div,p,img, a, table, 
+//  update element - attributes as well innerHTML
+//  remove element
+//  replace 
+ $(function(){
+ let p = document.createElement("p");
+ p.setAttribute("id","")
+ p.innerHTML="Hello";
+ 
+ document.getElementById("id").replaceWith(p);
+ })
+ function clicked(){
+ let valuep = $("#inputID").val();
+ let label = document.createElement("label");//<label></label>
+ label.innerHTML= valuep;//<label>innn</label>
+ document.getElementById("inputID").replaceWith(label);
+ }
+ h1, img, a, pre,label
+ $(function(){
+ let element1 = document.createElement("div");
+ element1.innerHTML="First DIV";
+ // document.body.append(element1)
+ $("#myDIV").append(element1);
+
+ let element2 = document.createElement("h1");
+ element2.innerHTML="h1";
+ $("#myh1").append(element2);
+
+
+
+ let element4 = document.createElement("label");
+ element4.innerHTML="label";
+ $("#mylabel").append(element4);
+ })
+ $(function(){
+ let element1 = document.createElement("table");
+ element1.innerHTML="<tr>";
+ $("#mytable").append(element1);
+ })
+ $(function(){
+ let element1 = document.createElement("ul");
+ element1.innerHTML="<tr>";
+ $("#myul").append(element1);
+
+ })
+    </script>
+</head>
+<body>
+   <div class="myid">  </div>
+<img class="myimg" src="pie.jpg" alt="pi cake">
+<a href="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></a>
+ <h1> piecake</h1> 
+ <pre id="pie">best pie</pre>
+ <code> oh my god </code>
+</body>
+</html>
